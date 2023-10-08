@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaWebHomework2</title>
+    <style>
+        body{
+            font: 16px "simhei", Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+        }
+        body>div{
+            width: 1000px;
+            background-color: white;
+            margin: 0 auto;/*块级元素居中*/
+            overflow: hidden;/*解决上部元素粘连问题*/
+        }
+        #top{
+            background-color: white;
+            color: #606266;
+            font-size: 25px;
+            font-weight: 600;
+        }
+        body>div>div{
+            margin: 20px;
+        }
+        #main>div{
+            background-color: #E8E8E8;
+            padding: 16px;
+            font-family: -apple-system, SF UI Text, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif, SimHei, SimSun;
+            margin:12px 40px;
+        }
+        .main_z_z{
+            background-color: #f5f5f5;
+        }
+        h3{
+            color: #4f4f4f;
+            margin: 8px 0 16px 0;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 26px;
+        }
+        h4{
+            padding: 5px;
+        }
+        li{
+            margin-bottom: 5px;
+        }
+        img{
+            width: 25px;
+            float: right;
+        }
+        #xuehao{
+            float:right;
+            margin-right: 10px;
+        }
+        .main_p{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div id="top">
+        <span>实验报告</span>
+        <img src="https://img0.baidu.com/it/u=2407773217,1248198690&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="">
+        <span id="xuehao">20213625</span>
+        <hr>
+    </div>
+    <div id="main">
+        <h3>Gitbash基础操作</h3>
+        <h3>一、简介</h3>
+        <div class="main_z">
+            <ul>
+                <li>关于Gitbash的基础知识和基本命令行的简单介绍</li>
+                <li>使用GitBash实现文件/文件夹的创建，删除，复制，转移，查看，解压，重命名等操作</li>
+            </ul>
+        </div>
+        <h3>二、命令</h3>
+        <div class="main_z">
+            <ol>
+                <li>cd：切换目录</li>
+                <li>cd ..：返回上一目录</li>
+                <li>ls：查看当前目录</li>
+                <li>ls -a：查看所有文件（包括隐藏文件夹）</li>
+                <li>ls -R：查看文件夹，以及文件夹中的内容</li>
+                <li>mkdir：创建文件夹</li>
+                <li>rm：删除文件</li>
+                <li>rm -r：删除文件夹</li>
+                <li>cp：复制文件</li>
+                <li>cp -r：复制文件夹</li>
+                <li>cat：查看文件内容</li>
+                <li>mv：用于移动或重命名文件和目录</li>
+                <li>vim：创建html文件，并进行并写代码</li>
+                <li>tar -xf ：解压缩文件</li>
+            </ol>
+            <p>
+                补充：<br>
+                1、利用*.文件拓展名可以实现一次性对同一类型文件的处理。
+            </p>
+        </div>
+        <h3>三、总结</h3>
+        <div class="main_z">
+            <p>gitbash是一个在windows系统上运行Git命令的工具，通过使用命令行实现对计算机的操作，更加接近于计算机的底层。</p>
+        </div>
+        <h3>四、补充:如何从本地上传文件到GitHub上？</h3>
+        <div class="main_z">
+            <ol>
+                <li>step1：初始化本地项目</li>
+                <div class="main_z_z">
+                    <p class="main_p">git init</p>
+                </div>
+                <li>step2：将文件夹中的文件传至git仓库中</li>
+                <div class="main_z_z">
+                    <p class="main_p">git add</p>
+                </div>
+                <li>step3：将项目提交到git仓库（commit项目）</li>
+                <div class="main_z_z">
+                    <p class="main_p">git commit -m "注释"</p>
+                </div>
+                <li>step4：新建分支</li>
+                <div class="main_z_z">
+                    <p class="main_p">git branch -M main</p>
+                </div>
+                <li>step5：将本地仓库（.git）和gitHub上的仓库进行关联</li>
+                <div class="main_z_z">
+                    <p class="main_p">git remote add origin gitHub仓库地址</p>
+                </div>
+                <li>step6：将本地仓库的项目push到gitHub的远程仓库上</li>
+                <div class="main_z_z">
+                    <p class="main_p">git push -u origin main</p>
+                </div>
+            </ol>
+        </div>
+        <h3>五、相关查询结果</h3>
+        <div class="main_z">
+        <ol>
+            <li>安全</li>    
+                <div class="main_z_z">
+                    <option> 广东达元绿洲食品安全科技股份有限公司</option>
+                </div>
+                <li>教育</li> 
+                <div class="main_z_z">
+                    <option>安徽传英教育科技有限公司</option>
+                    <option>北京安博大成教育科技有限责任公司</option>
+                    <option>北京贝斯林泰岳教育科技有限公司</option>
+                    <option>北京布局未来教育科技有限公司</option>
+                    <option>北京位来教育科技有限公司</option>
+                    <option>北京学睿思教育咨询有限公司</option>
+                    <option>北京翼鸥教育科技有限公司</option>
+                    <option>北京中传赛奥教育科技有限公司</option>
+                    <option>沈阳启煋教育咨询有限公司</option>
+                    <option>沈阳尚大教育咨询有限公司</option>
+                    <option> 成都维物汇谱教育管理有限公司</option> 
+                    <option>东软教育科技集团有限公司</option> 
+                    <option>高途教育科技集团有限公司</option> 
+                    <option>广州百捷教育科技发展有限公司</option> 
+                    <option>哈尔滨维特塞尔教育科技有限公司</option> 
+                    <option>杭州九逸教育科技有限公司</option> 
+                    <option>杭州沃土教育科技股份有限公司</option>
+                    <option>河南亮杰教育科技集团有限公司</option>
+                    <option>河南优学乐创教育科技有限公司</option>
+                    <option>华夏星博教育科技（北京）有限责任公司</option>
+                    <option>济南图忆教育科技有限公司</option>
+                    <option>江苏億来教育科技有限公司</option>
+                    <option>南京乾学教育科技有限公司</option>
+                    <option>宁波阶梯教育科技有限公司</option>
+                    <option>青岛英谷教育科技股份有限公司</option>
+                    <option>山东晟诺致诚教育科技发展集团有限公司</option>
+                    <option>山东极客教育咨询有限公司</option>
+                    <option>山东省国高教育研究有限公司</option>
+                    <option>山东悦知教育科技有限公司</option>
+                    <option>陕西研学旅行教育咨询服务有限公司</option>
+                    <option>上海佑莘教育科技有限公司</option>
+                    <option>深圳国匠云职业教育科技有限公司</option>
+                    <option>世纪文都教育科技集团股份有限公司</option>
+                    <option>四川旅投教育投资有限责任公司</option>
+                    <option>四川众行智合教育科技有限公司</option>
+                    <option>武汉光驰教育科技股份有限公司</option>
+                    <option>悦读天下（北京）国际教育科技有限公司</option>
+                    <option>紫光教育科技有限公司</option>
+                </div>
+                        <li>网络</li>
+                    <div class="main_z_z">
+                        <option value="volvo">安徽众合聚惠网络科技有限公司</option>
+                        <option>佰科金鼎（山东）网络科技有限公司</option>
+                        <option>北京字节跳动网络技术有限公司</option>
+                        <option>朝鸿（山东）网络技术有限公司</option>
+                        <option>广州腾科网络技术有限公司</option>
+                        <option>河北赤木网络科技有限公司</option>
+                        <option>河北见新网络科技有限公司</option>
+                        <option>湖南通远网络股份有限公司</option>
+                        <option>慕乐网络科技（大连）有限公司</option>
+                        <option>山东鲁优网络科技有限公司</option>
+                        <option>陕西科米网络科技有限公司</option>
+                        <option>上海逸景网络科技有限公司</option>
+                        <option>搜伦（上海）网络科技有限公司</option>
+                        <option>信亦宏达网络存储技术（北京）有限公司</option>
+                    </div>
+                        <li>软件</li>
+                    <div class="main_z_z">
+                        <option>北京东方仿真软件技术有限公司</option>
+                        <option>北京欧倍尔软件技术开发有限公司</option>
+                        <option>北京天演融智软件有限公司</option>
+                        <option>北京小米移动软件有限公司</option>
+                        <option>北京盈建科软件股份有限公司</option>
+                        <option>成都泰盟软件有限公司</option>
+                        <option>广州凯园软件科技有限公司</option>
+                        <option>江苏润和软件股份有限公司</option>
+                        <option>山东欧倍尔软件科技有限责任公司</option>
+                        <option>上海鲁班软件股份有限公司</option>                     
+                </div> 
+            </div>
+            <h3>六、公司介绍</h3>
+        <div class="main_z">
+              <p>
+                简介：北京小米移动软件有限公司成立于2012年5月8日，注册地位于北京市海淀区西二旗中路33号院6号楼8层018号，法定代表人为王川,
+                经营范围包括基础软件服务、应用软件服务；技术开发、技术咨询、技术服务、技术转让、技术培训；计算机系统服务；设计、制作、代理、发布广告；承办展览展示活动；
+                市场调查；货物进出口、技术进出口、代理进出口；销售电子产品、通讯设备、计算机、软件及辅助设备、电气化教学设备。
+              </p>
+        </div>
+        </ol>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
