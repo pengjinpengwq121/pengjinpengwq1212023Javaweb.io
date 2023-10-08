@@ -1,0 +1,106 @@
+   简介：
+安装相关应用软件git，并熟练掌握一些相关命令符
+ls   			查看当前目录内的内容
+cd . . 			返回当前目录的父亲目录
+cp+文件路径+. -R    		复制文件路径下的文件夹或者某个文件              
+date 			显示当前的时间和日期
+rm+文件  			删除相关文件
+rmdir +目录名		删除相关文件夹			history 			查找命令符记录
+mkdir +文件名		创建文件夹
+    1  cd /
+    2  ls
+    3  proc/
+    4  mkdir pyy
+    5  ls
+    6  cd pyy/
+    7  ls /e
+    8  ls /d
+    9  cp --help
+   10  mkdir pjp
+   11  cp c:\users\admin\Desktopv
+   12  cp /d/Program\ Files . -R
+   13  CP /D/Program/Files . -R
+   14  CP /D/Programfiles/git/cl . -R
+   15  CP /D/Program files/Git/cl . -R
+   16  CP /D/Programfiles/Git/cl . -R
+   17  CP /D/Programfiles/Git/d
+   18  CP /D/Programfiles/Git/d . -r
+   19  CP /D/Programfiles/Git/
+   20  CP /D/Program files/Git/cl . -R
+   21  CP /D/Programfiles/Git/cl . -R
+   22  cp /d/programfiles/git/cl . -R
+   23  history
+   24  cp /d/Program\ Files/Git/cl . -R
+   25  ls
+   26  dir
+   27  ls
+   28  cd
+   29  cd pyy/cl/
+   30  cd pyy/
+   31  ls
+   32  cd /
+   33  cd pyy/cl
+   34  ls
+   35  history
+   36  cd /pyy/
+   37  cd
+   38  cd/
+   39  cd /
+   40  cd /d/
+   41  mikdr pyy
+   42  mkdir pyy
+   43  help
+   44  -dms
+   45  dms
+   46  history
+   47  cd
+   48  ls
+   49  cd /
+   50  ls
+   51  ls
+   52  history
+   53  rmdir /pyy/
+   54  rmdir /d/pyy . -R
+   55  rmdir /d/pyy
+   56  help
+   57  cp history . -R
+   58  cd /d/
+   59  mkdir pjp
+   60  cp /c/Users/admin/Desktop/20213625 . -R
+   61  ls
+   62  cd /d/pjp/
+   63  cp /c/Users/admin/Desktop/20213625 . -R
+   64  ls
+   65  cd /d/pjp/20213625/
+   66  ls
+   67*
+   68  ls
+   69* cp
+   70  ls
+   71  cd /d/pjp/20213625/
+   72  ls
+   73  cd /d/pjp/20213625/图片/
+   74  ls
+   75  cd /d/pjp/20213625/
+   76  rmdir c#
+   77  rmdir /d/pjp/20213625/c#
+   78  rmdir /d/pjp/20213625/c#/
+   79  rmdir C#
+   80  rmdir C#
+   81  rmdir /C#
+   82  rmdir C
+   83  rmdir 'C#'
+   84  rmdir java
+   85  rmdir c\#
+   86  rmdir C\#
+   87  rmdir C++ . -R
+   88  rmdir c++
+   89  rmdir 数据库
+   90  rmdir QQ邮箱_files/
+   91  rm ~\$复习题\(1\).docx
+   92  history
+   93  cd /d/pjp/
+   94  mkdir pyy
+   95  time
+   96  times
+   97  history
