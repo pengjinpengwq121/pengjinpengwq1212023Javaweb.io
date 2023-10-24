@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>second homework</title>
+    <style>
+        h1{
+            text-align: center;
+            color: darkslategray;
+        }
+        p{
+            font-size: 25px;
+        }
+        caption{
+            font-size: 20px;
+            color: crimson;
+            text-align: center;
+        }
+        dt{
+            font-size: 24px;
+            color: black;
+
+        }
+        .jg{
+            font-size: 18px;
+        }
+</style>
+</head>
+
+<body>
+<h1>学习总结</h1>
+<p>
+    通过老师的讲解和有关内容的学习。主要收获到的内容有以下这些：</p>
+<p>
+    1.对Linux的基础命令的熟悉以及个人文件夹的创建</p>
+<p>
+    2.对软链接，硬链接初步认识
+</p>
+<p>
+    3.了解了git环境配置以及建立仓库
+</p>
+<hr>
+<div>
+    <table border="1"  rules="cols" align="center" cellspacing="10" cellpadding="20" width="100%" height="100%">
+        <caption>
+            <b>一些命令相关内容详述</b>
+        </caption>
+        <tr>
+            <th style="font-size:20px">命令</th>
+            <th style="font-size:20px">简介</th>
+            <th style="font-size:20px">常用参数选项</th>
+            <th style="font-size:20px">总结</th>
+        </tr>
+        <tr>
+            <td>
+                ls命令
+            </td>
+            <td>
+                语法 ：ls[选项][目录或者文件]<br>
+                功能：对于目录，该命令列出该目录的子目录和文件。对于文件列出文件名及其它信息<br>
+            </td>
+            <td>
+                <ol type="1" start="1">
+                    <li>-a:列出目录显得所有文件，包括以"."开头的隐藏文件</li>
+                    <li>-l:列出文件的详细信息</li>
+                </ol>
+            </td>
+            <td>
+                <div style="width: 400px;height: 100px; overflow-x:hidden;">
+                    <ul><li>ls 命令将每个由 Directory 参数指定的目录或者每个由 File 参数指定的名称写到标准输出，以及您所要求的和标志一起的其它信息。</li>
+                        <li>如果不指定 File 或 Directory 参数， ls 命令显示当前目录的内容。</li></ul>
+
+                </div>
+            </td>
+        <tr>
+        <tr>
+            <td>
+                pwd命令
+            </td>
+            <td>
+                语法：pwd<br>
+                功能：显示用户当前所在目录
+            </td>
+        <td>
+            <ol type="1" start="1">
+                <li>没有参数选项  单独使用</li>
+            </ol>
+        </td>
+            <td>
+                <div style="width: 400px;height: 100px; overflow-x:hidden;">
+                    <ul><li>pwd是Linux中一个非常有用而又十分简单的命令，pwd是词组print working directory的首字母缩写，即打印工作目录；工作目录就是你当前所处于的那个目录。</li>
+                        <li>pwd始终以绝对路径的方式打印工作目录，即从根目录（/）开始到当前目录的完整路径。在实际工作中，我们常常记不起当前目录的完整路径，此时pwd命令就派上用场了。</li></ul>
+
+                </div>
+            </td>
+        <tr>
+        <tr>
+            <td>
+                stat命令
+            </td>
+            <td>
+                语法：stat 目录或者文件<br>
+                功能：查看文件或者目录属性
+            </td>
+        <td>
+            <ol type="1" start="1">
+                <li>-c:指定输出格式</li>
+                <li>-f:显示文件系统状态而非文件状态</li>
+                <li>-t:使用简短格式输出</li>
+
+            </ol>
+        </td>
+            <td>
+                <div style="width: 400px;height: 100px; overflow-x:hidden;">
+                    <ul><li>在 Linux 系统中，stat 命令用于显示指定文件或文件系统的文件状态信息，包括文件的类型、权限、大小、所属用户和组、访问时间、修改时间、创建时间等详细信息。</li>
+                        <li>它可以用于检查文件的状态以及了解文件的属性。</li></ul>
+
+                </div>
+            </td>
+        <tr>
+        <tr>
+            <td>
+                cd命令
+            </td>
+            <td>
+                语法：cd 目录名<br>
+                功能：改变工作目录。将当前工作目录改变到只能指定工作目录下<br>
+                cd ..  返回上一目录<br>
+                cd -   进入最近访问的目录<br>
+                cd ~   进入主工作目录
+
+            </td>
+        <td>
+            <ol type="1" start="1">
+                <li>-P:使用绝对路径</li>
+                <li>-L:使用相对路径</li>
+                <li>-S:进入到指定的子目录</li>
+                <li>-X:退回到上一级目录</li>
+                <li>-h:显示帮助信息</li>
+
+            </ol>
+        </td>
+            <td>
+                <div style="width: 400px;height: 100px; overflow-x:hidden;">
+                    <ul><li>CD 命令是 Linux 操作系统中最重要的命令之一，它可以帮助我们移动到不同的路径，从而方便我们进行文件管理。</li>
+                        <li>CD 命令的完整形式是 change directory，也就是改变目录的意思。它可以帮助我们快速的移动到指定的目录，实现文件的管理、复制、移动等功能。</li></ul>
+
+                </div>
+            </td>
+        <tr>
+        <tr>
+            <td>
+                mkdir命令
+            </td>
+            <td>
+                语法：mkdir[选项]目录名<br>
+                功能：在当前目录下创建一个目录
+
+            </td>
+            <td>
+                <ol type="1" start="1">
+                    <li>-p:递归创建多级目录</li>
+                    <li>-m:建立目录的同时设置目录的权限</li>
+                    <li>-z:设置安全上下文</li>
+                    <li>-v:显示目录的创建过程</li>
+                </ol>
+            </td>
+            <td>
+                <div style="width: 400px;height: 100px; overflow-x:hidden;">
+                    <ul><li>mkdir命令来自于英文词组“make directories”的缩写，其功能是用来创建目录文件。</li>
+                        <li>使用简单，但需要注意若要创建的目标目录已经存在，则会提示已存在而不继续创建，不覆盖已有文件。</li>
+                        <li>而目录不存在，但具有嵌套的依赖关系，例如a/b/c/d/e/f，要想一次性创建则需要加入-p参数，进行递归操作。</li>
+                    </ul>
+
+                </div>
+            </td>
+        <tr>
+        <tr>
+            <td>
+                touch命令
+            </td>
+            <td>
+                语法：touch [选项] 文件<br>
+                功能：touch命令可以更改文档或者目录的日期文件，包括存取和更改时间，或者是创建一个文件
+
+            </td>
+            <td>
+                <ol type="1" start="1">
+                    <li>-a:只更改访问时间</li>
+                    <li>-c --no-create 不创建任何文件</li>
+                    <li>-d --date=字符串 使用指定字符串表示时间而非当前时间</li>
+                    <li>-m:只更改修改时间</li>
+                </ol>
+            </td>
+            <td>
+                <div style="width: 400px;height: 100px; overflow-x:hidden;">
+                    <ul><li>touch命令用于修改文件或者目录的时间属性，包括存取时间和更改时间。</li>
+                    <li>若文件不存在，系统会建立一个新的文件。</li>
+                    </ul>
+
+                </div>
+            </td>
+        <tr>
+        <tr>
+            <td>
+                cp命令
+            </td>
+            <td>
+                语法：cp[选项]源文件或者目录 目标文件或者目录<br>
+                功能：后面可以加路径，如果最后是目录，并且在该目录下不存在同名文件，将该文件拷贝到该目录下。同一目录中不能存在同名文件。
+
+            </td>
+            <td>
+                <ol type="1" start="1">
+                    <li>-r:递归复制，用于复制目录</li>
+                    <li>-L:把目标文件建立为源文件的硬链接文件，而不是复制源文件</li>
+                    <li>-i:询问，如果目标文件已经存在，则会询问是否覆盖</li>
+                </ol>
+            </td>
+            <td>
+                <div style="width: 400px;height: 100px; overflow-x:hidden;">
+                    <ul><li>cp 命令，主要用来复制文件和目录，同时借助某些选项，还可以实现复制整个目录，以及比对两文件的新旧而予以升级等功能。</li>
+                        <li>cp命令一次复制多个文件时，目标文件参数必须是一个已经存在的目录，否则将出现错误。</li></ul>
+
+                </div>
+            </td>
+        <tr>
+        <tr>
+            <td>
+                rm命令
+            </td>
+            <td>
+                语法：rm[选项]文件名或者目录<br>
+                功能：删除文件或者目录
+
+            </td>
+            <td>
+                <ol type="1" start="1">
+                    <li>-r:递归删除目录及其内容</li>
+                    <li>-f, --force 强制删除。忽略不存在的文件，不提示确认</li>
+                    <li>-i:在删除前需要确认</li>
+                </ol>
+            </td>
+            <td>
+                <div style="width: 400px;height: 100px; overflow-x:hidden;">
+                    <ul><li>rm命令可以删除一个目录中的一个或多个文件或目录，也可以将某个目录及其下属的所有文件及其子目录均删除掉。对于链接文件，只是删除整个链接文件，而原有文件保持不变。</li>
+                        <li>注意：使用rm命令要格外小心。因为一旦删除了一个文件，就无法再恢复它。所以，在删除文件之前，最好再看一下文件的内容，确定是否真要删除。rm命令可以用-i选项，这个选项在使用文件扩展名字符删除多个文件时特别有用。使用这个选项，系统会要求你逐一确定是否要删除。这时，必须输入y并按Enter键，才能删除文件。如果仅按Enter键或其他字符，文件不会被删除。</li></ul>
+
+                </div>
+            </td>
+        <tr>
+    </table>
+</div>
+<div>
+    <h1>关于软硬链接以及git环境配置</h1>
+    <dl>
+        <dt>
+            软连接
+        </dt>
+        <dd>
+            软连接：它的功能是为某一个文件在另一个位置建立一个同步的链接。简单来说，就是window里面的快捷方式。<br>
+            语法：ln -s target source<br>
+            ln -s:表示创建一个软链接；<br>
+            target：表示目标文件（夹），即源文件<br>
+            source:表示当前目录的软链接名，即被创建出来的软链接名称以及放置在何处。
+        </dd>
+        <dt>硬链接</dt>
+        <dd>
+            硬链接：硬链接通过指向索引节点来进行连接（inode index）。在Linux中，多个文件名指向同一个索引节点是存在的。硬链接的作用是允许一个文件拥有多个有效路径名<br>
+            这样用户就可以建立硬链接到重要文件，以防止“误删”的功能。<br>
+            语法：ln  target source
+        </dd>
+        <dt>了解了git环境配置以及建立仓库</dt>
+        <dd><ul>
+            <li><dt class="jg">设置用户</dt>
+            <dd>git config --global user.name "name"<br>
+                git config --global user.email "email"</dd>
+            </li>
+            <li><dt class="jg">初始化本地仓库</dt>
+                <dd>git init</dd>
+            </li>
+        </ul></dd>
+    </dl>
+</div>
+</body>
+</html>
