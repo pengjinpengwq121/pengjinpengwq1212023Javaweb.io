@@ -84,9 +84,9 @@
     </div>
 
     <div id="mainone">
-        <div id="video-div">
-            <video width="500px" controls src="../video/v02004g10000c62vhdjc77ucs4ub13h0.mp4" id="video"> </video>
-        </div>
+             <video id="video" width="640" height="360" controls>
+                <source src="../video/v02004d90000bjam8rg7q8i1sd06mda0.mp4" type="video/mp4">
+            </video>
     </div>
     <div id="maintwo">
         <div id="button">
@@ -100,7 +100,7 @@
     </div>
 
     <script>
-        var videoFiles = ["v02004g10000c62vhdjc77ucs4ub13h0.mp4", "v02004g10000c62vnfbc77ub99epl7dg.mp4", "v02004g10000c62vpf3c77u7or2pecqg.mp4", "v02004g10000c62vsljc77u9oiijujh0.mp4", "v02004g10000c630rfjc77u2pkcl6kr0.mp4", "v02004g10000c630slrc77ubsack6ncg.mp4", , "v02004g10000c6317h3c77ub99eqonu0.mp4", "v02004g10000c64e1fjc77u1mcul10t0.mp4", "v02004g10000c64e29bc77u08to73glg.mp4", "v02004g10000c64ecsjc77u0fsou1200.mp4", "v02004g10000c64emfjc77udflk91trg.mp4", "v02004g10000c5rrikbc77u4rdiknfog.mp4", "v02004g10000c62uptrc77u43f69kg8g.mp4", "v02004g10000c62uuljc77u0gu6e3kvg.mp4"]
+      var videoFiles = ["v02004f40000bpgcqf51mikbqkhojceg.mp4", "v02004e10000blqa44o858lv6e4b9kpg.mp4", "v02004g10000c5rrikbc77u4rdiknfog.mp4", "v02004g10000c5sagp3c77uek0luucag.mp4", "v02004g10000c62uptrc77u43f69kg8g.mp4"];
         var video = document.getElementById("video")
         var i = 0;
         var x = 0;
@@ -125,7 +125,7 @@
         function search() {
             var searchText = searchInput.value;
             x = Number(searchText);
-            if (x > videoFiles.length || x <= 0 || x == null) {
+            if (x > videoFiles.length || x <= 0 || x == null||isNaN(x)) {
                 x = 0;
                 video.src = "../video/" + videoFiles[x];
                 var comment = document.getElementById("comment");
