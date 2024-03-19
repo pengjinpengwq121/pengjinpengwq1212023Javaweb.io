@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol {
+            font-size: 3em;
+            background-color: black;
+            color: green;
+            padding-left: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+
+    </ol>
+
+    <script>
+        var timer = {};
+        timer.begin = function () {
+            timer.bt = new Date();
+        };
+        timer.end = function () {
+
+            return new Date() - timer.bt;
+        };
+
+        var Emoji = [[126976, 127020], [127024, 127124], [127136, 127222], [127744, 128722]];
+        output('从我出生算到到现在的时间戳的计算时间为：');
+        let birthDay = new Date("2003/5/16");
+
+        var mySecs = parseInt((new Date() - birthDay) / 1000);
+        output("my Life now is " + mySecs + "s!");
+        timer.begin();
+        for (let i = 0; i < mySecs; i++) {
+            // let now = new Data();
+            // if (now - timer.bt > 1000) {
+            //     output("1000ms");
+            // }
+            //do nothing
+        }
+
+        output("Spend Time :" + (timer.end()) + " ms!");
+
+        timer.begin();
+        var emojiStr = '';
+        for (let loop = 0; loop < 10; loop++) {
+            for (let i = 0; i < Emoji.length; i++) {
+                for (let j = Emoji[i][0]; j < Emoji[i][1]; j++) {
+                    emojiStr += String.fromCodePoint(j);
+                }
+            }
+            output(emojiStr);
+        }
+
+        output("输出所有表情字符，花费时间：" + timer.end() + ' ms!');
+
+        timer.begin();
+        var imgDoms = [];
+        var imgSrc = ['myFace1.jpg', 'myFace2.jpg', 'myFace3.jpg', 'myFace4.jpg', 'myFace5.jpg', 'myFace6.jpg', 'xiaozu.jpg'];
+        for (let url of imgSrc) {
+            let img = new Image();
+            img.src = 'images/' + url;
+            img.addEventListener('load', function () {
+                let s = "本地（SSD硬盘）异步代码花费时间：" + url + timer.end() + " ms";
+                output(s);
+            });
+            imgDoms.push(img);
+
+        }
+        output("同步代码花费时间：" + timer.end() + " ms!");
+        //--------网络IO的加载研究
+        //https://masterlijh.github.io/myface/
+
+        for (let i = 0; i < 14; i++) {
+            let img = new Image();
+            img.src = 'https://masterlijh.github.io/myface/' + i + '.jpg';
+            img.addEventListener('load', function () {
+                let s = "github网络事件的异步代码花费时间：" + i + ".jpg" + + timer.end() + " ms";
+                output(s);
+            });
+            imgDoms.push(img);
+
+        }
+
+
+
+
+        function output(s) {
+            var dad = $('ol');
+            var child = document.createElement('li');
+            child.textContent = s;
+            dad.appendChild(child);
+
+        }
+
+
+
+        function $(selector) {
+            return document.querySelector(selector);
+        }
+    </script>
+</body>
+
+</html>
